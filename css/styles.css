@@ -87,27 +87,26 @@ header {
   align-items: center;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: -0.5px;
-  color: var(--color-text);
-  border: none;
+.logo-link {
   display: flex;
-  flex-direction: column;
-}
-
-.logo:hover {
+  align-items: center;
   border: none;
-  color: var(--color-link);
 }
 
-.logo span {
-  font-size: 0.8rem;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--color-accent-sage);
+.logo-link:hover {
+  border: none;
+}
+
+.logo-img {
+  max-height: 50px;
+  width: auto;
+  box-shadow: none;
+  border-radius: 0;
+  transition: transform var(--transition-fast);
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
 }
 
 nav ul {
