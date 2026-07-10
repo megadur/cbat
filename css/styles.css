@@ -87,19 +87,42 @@ header {
   align-items: center;
 }
 
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  border: none;
+}
+
+.logo-wrapper:hover {
+  border: none;
+}
+
+.logo-icon {
+  height: 40px;
+  width: auto;
+  box-shadow: none;
+  border-radius: 0;
+  transition: transform var(--transition-fast);
+}
+
+.logo-wrapper:hover .logo-icon {
+  transform: scale(1.05);
+}
+
+.logo-wrapper:hover .logo {
+  color: var(--color-link);
+}
+
 .logo {
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: -0.5px;
   color: var(--color-text);
-  border: none;
   display: flex;
   flex-direction: column;
-}
-
-.logo:hover {
-  border: none;
-  color: var(--color-link);
+  transition: color var(--transition-fast);
 }
 
 .logo span {
