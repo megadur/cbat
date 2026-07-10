@@ -87,26 +87,27 @@ header {
   align-items: center;
 }
 
-.logo-link {
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: var(--color-text);
+  border: none;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+}
+
+.logo:hover {
   border: none;
+  color: var(--color-link);
 }
 
-.logo-link:hover {
-  border: none;
-}
-
-.logo-img {
-  max-height: 35px;
-  width: auto;
-  box-shadow: none;
-  border-radius: 0;
-  transition: transform var(--transition-fast);
-}
-
-.logo-img:hover {
-  transform: scale(1.05);
+.logo span {
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-accent-sage);
 }
 
 nav ul {
