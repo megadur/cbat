@@ -1,9 +1,9 @@
 import os
 import re
 
-old_pattern = re.compile(r'<a href="index\.html" class="logo">\s*Charlotte Blickensdorf\s*<span>Alexander-Technik</span>\s*</a>', re.DOTALL)
+old_pattern = re.compile(r'<a href="index\.html" class="logo">\s*Charlotte Blickensdorff\s*<span>Alexander-Technik</span>\s*</a>', re.DOTALL)
 new_content = '''<a href="index.html" class="logo-link">
-                <img src="assets/img/logo.png" alt="Charlotte Blickensdorf - Alexander-Technik Logo" class="logo-img">
+                <img src="assets/img/logo.png" alt="Charlotte Blickensdorff - Alexander-Technik Logo" class="logo-img">
             </a>'''
 
 for file in os.listdir('.'):
